@@ -1,0 +1,31 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: 375px) { @content; }
+  } @else if $breakpoint == md {
+    @media (min-width: 767px) { @content; }
+  } @else if $breakpoint == lg {
+    @media (min-width: 1024px) { @content; }
+  } @else if $breakpoint == lgx {
+    @media (min-width: 1440px) { @content; }
+  }
+}
+
+@mixin flex-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+    
+}
+%cta{
+    border: 2px solid $second-bgc;
+    border-radius: 40px;
+    padding: 0 26px;
+    line-height: 2.7;
+    font-size: 14px;
+    color: #000000;
+}
