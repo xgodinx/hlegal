@@ -782,3 +782,148 @@
          }
 		}
 }
+
+
+.profile {
+   padding: 0 15px;
+   @include respond (lg){
+          padding: 0 60px;
+         }
+		&__body {
+      
+         @include respond (md){
+          display: grid;
+          grid-template-columns: 1fr 1.5fr;
+          grid-template-rows: 0.5fr 1fr ;
+         }
+         @include respond (lg){
+          display: grid;
+          grid-template-columns: 1fr 1.5fr;
+          grid-template-rows: 150px 1fr ;
+          grid-gap: 0 60px;
+         }
+         @include respond (lgx){
+          display: grid;
+          justify-self: center;
+          grid-template-columns: minmax(auto,400px) minmax(auto, 1000px);
+          grid-template-rows: 150px 1fr ;
+          grid-gap: 0 60px;
+         }
+		}
+
+		&__row {
+        
+         @include respond (md){
+            
+         }
+         @include respond (lg){
+            
+         }
+		}
+
+		&__image {
+         display: grid;
+         max-width: 500px;
+         aspect-ratio: 315/375;
+         margin-bottom: 30px;
+         @include respond (md){
+            
+            
+         }
+         img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+         }
+		}
+
+		&__contacts {
+         
+         @include respond (md){
+            padding: 0 10px;
+            align-self: flex-start;
+            
+         }
+         @include respond (lg){
+            padding: 0;
+         }
+		}
+
+		&__name {
+         font-weight: 700;
+         font-size: 38px;
+         background: linear-gradient(#F0145A,#EF8080);
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+         margin-bottom: 15px;
+		}
+      &__details{
+         display: grid;
+         grid-gap: 10px;
+         margin-bottom: 30px;
+         @include respond (lgx){
+            display: grid;
+            grid-auto-flow: column;
+            align-self: center;
+            justify-items: center;
+         }
+      }
+		&__position {
+         color: #B3B3BA;
+         font-size: 14px;
+         line-height: 22px;
+		}
+
+		&__email {
+         a{
+            color: #24A3FF;
+            font-size: 16px;
+         }
+		}
+
+		&__linked {
+         a{
+            color: #24A3FF;
+            font-size: 16px;
+         }
+		}
+
+		&__about {
+        border-top: 4px solid #3d3db1;
+        @include respond(md){
+          grid-column: 1/3;
+        }
+        @include respond(lg){
+          grid-column: 2/3;
+          grid-row: 2/2;
+        }
+		}
+
+		&__text {
+         
+         margin-top: 34px;
+         margin-bottom: 30px;
+         @include respond(md){
+          
+         }
+         p:not(:last-child) {
+            margin-bottom: 20px;
+         }
+         p{
+            font-size: 16px;
+            line-height: 26px;
+            color: #000000;
+         }
+         h3{
+            color: #323264;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            @include respond (md){
+            margin-bottom: 15px;
+         }
+         }
+		}
+}
+
