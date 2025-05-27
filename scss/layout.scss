@@ -13,7 +13,7 @@ body{
    margin: 0 auto;
    padding: 0 15px;
    @include respond(md){
-    max-width: 648px;
+    
    }
    @include respond(lg){
     max-width: 1024px;
