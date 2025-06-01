@@ -1526,13 +1526,26 @@ body {
 .gradient {
   background: RGBA(50, 50, 100, 1);
   background: linear-gradient(181deg, rgb(50, 50, 100) 0%, rgb(50, 50, 100) 50%, rgb(100, 62, 114) 100%);
+  position: relative;
+  z-index: 2;
+}
+
+.shadow {
+  height: 20px;
+  background-color: #CACADB;
+  margin: 0 20px;
+  border-radius: 24px;
+  position: relative;
+  top: -10px;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .trust {
   background-color: white;
 }
 .trust__title {
-  margin-top: 80px;
+  margin-top: 60px;
   color: #323264;
   font-weight: 700;
   font-size: 14px;

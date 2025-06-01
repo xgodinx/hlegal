@@ -1543,6 +1543,7 @@
 
 
 .service {
+   
    padding: 0 15px;
    
    @include respond (md){
@@ -1628,14 +1629,25 @@
 .gradient{
    background: RGBA(50, 50, 100, 1);
    background: linear-gradient(181deg, rgba(50, 50, 100, 1) 0%, rgba(50, 50, 100, 1)50%,rgba(100, 62, 114, 1) 100%);
+   position: relative;
+   z-index: 2;
 }
-
+.shadow{
+   height: 20px;
+   background-color: #CACADB;
+   margin: 0 20px;
+   border-radius: 24px;
+   position: relative;
+   top: -10px;
+   overflow: hidden;
+   z-index: 1;
+}
 
 .trust {
    
    background-color: white;
 		&__title {
-         margin-top: 80px;
+         margin-top: 60px;
          color: #323264;
          font-weight: 700;
          font-size: 14px;
@@ -1664,7 +1676,7 @@
             margin: 0 auto;
             margin-bottom: 60px;
             border-radius: 24px;
-         overflow: hidden;
+            overflow: hidden;
          }
 		}
 
