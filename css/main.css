@@ -1560,6 +1560,8 @@ body {
     max-width: 1720px;
     margin: 0 auto;
     margin-bottom: 60px;
+    border-radius: 24px;
+    overflow: hidden;
   }
 }
 .trust__company {

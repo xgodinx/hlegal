@@ -1647,6 +1647,7 @@
 		}
 
 		&__companies {
+         
          @include respond (md){
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -1656,11 +1657,14 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 0;
+            
          }
          @include respond (lgx){
             max-width: 1720px;
             margin: 0 auto;
             margin-bottom: 60px;
+            border-radius: 24px;
+         overflow: hidden;
          }
 		}
 
